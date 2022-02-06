@@ -1,0 +1,74 @@
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#title {
+    font-size: 90px;
+}
+
+#displayColor {
+    font-size: 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#copyButton {
+    font-size: 30px;
+    text-align: center;
+    border-radius: 10px;
+    border: solid 3px rgb(131, 131, 131);
+    background-color: rgb(41, 41, 41);
+    color: rgb(255, 255, 255);
+
+    transition: all 200ms ease;
+    cursor: pointer;
+}
+
+#copyButton:hover {
+    transform: scale(1.2);
+}
+
+#copyButton:active {
+    transform: scale(0.85);
+}
+
+#copyButton, #displayColor {
+    margin: 5px;
+}
+
+@keyframes changeColor {
+    0% { color: #000; }
+    10% { color: #f00; }
+    20% { color: #0f0; }
+    30% { color: #00f; }
+    40% { color: rgb(195, 255, 0); }
+    50% { color: rgb(225, 255, 0); }
+    60% { color: rgb(0, 255, 255); }
+    70% { color: rgb(225, 0, 255); }
+    80% { color: rgb(255, 166, 0); }
+    90% { color: rgb(255, 0, 149); }
+    100% { color: rgb(0, 140, 255); }
+}
+
+#textAnimation {
+    animation: changeColor 3s infinite alternate;
+}
+
+#generateColor {
+    font-size: 40px;
+    border: solid 3px rgb(131, 131, 131);
+    border-radius: 15px;
+    background-color: rgb(41, 41, 41);
+    color: rgb(255, 255, 255);
+
+    transition: all 200ms ease;
+    cursor: pointer;
+}
+
+#generateColor:hover {
+    transform: scale(1.1);
+}
+
+#generateColor:active {
+    transform: scale(0.85);
+}
